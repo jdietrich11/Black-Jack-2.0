@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gameBoard">
+      <div class="titleArea">
+        <header>
+          <h1 class="title">Black Jack v2.0</h1>
+        </header>
+      </div>
+      <div class="playArea">
+        <button class="deal hidden">Deal</button>
+        <h2 class="bank hidden">
+          Bank: $
+          <span class="bank bankNum">100</span>
+        </h2>
+        <input class="bid hidden" type="number" placeholder="BID Amount" />
+        <h3 class="dealerTot hidden">
+          Dealer Total:<span class="dealerNumber">0</span>
+        </h3>
+        <h3 class="playerTot hidden">
+          Player Total:<span class="playerNumber">0</span>
+        </h3>
+        <div class="dealerHandCards">
+          <img class="card-1 deck hidden" src="/deck.jpg" alt="Deck of cards" />
+          <img class="card-2 deck hidden" src="/deck.jpg" alt="Deck of cards" />
+          <img class="card-3 deck hidden" src="/deck.jpg" alt="Deck of cards" />
+          <img class="card-4 deck hidden" src="/deck.jpg" alt="Deck of cards" />
+          <img class="card-5 deck hidden" src="/deck.jpg" alt="Deck of cards" />
+        </div>
+        <div class="playerHandCards">
+          <img class="card-6 deck hidden" src="/deck.jpg" alt="Deck of cards" />
+          <img class="card-7 deck hidden" src="/deck.jpg" alt="Deck of cards" />
+          <img class="card-8 deck hidden" src="/deck.jpg" alt="Deck of cards" />
+          <img class="card-9 deck hidden" src="/deck.jpg" alt="Deck of cards" />
+          <img
+            class="card-10 deck hidden"
+            src="/deck.jpg"
+            alt="Deck of cards"
+          />
+        </div>
+        <div class="btnBox">
+          <button class="newGame hidden">New Game</button>
+          <button class="hitBtn hidden">Hit Me!</button>
+          <button class="standBtn hidden">Stand!</button>
+          <button class="nextHand hidden">Next Hand</button>
+        </div>
+        <div class="overlay">
+          <div class="overlayBox">
+            <div class="overlayTitleBox">
+              <h3 class="userInfo">User Info</h3>
+            </div>
+            <div class="inputBox">
+              <input
+                type="text"
+                placeholder="First Name"
+                class="input firstName"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="input lastName"
+              />
+              <input
+                type="text"
+                placeholder="UserName"
+                class="input userName"
+              />
+            </div>
+            <div class="subBox">
+              <button class="subBtn">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
